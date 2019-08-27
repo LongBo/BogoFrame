@@ -1,2 +1,2 @@
 # BogoFrame
-用go写了个简单web框架
+用go写的简单web框架
