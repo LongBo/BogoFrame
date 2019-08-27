@@ -1,0 +1,28 @@
+{{ define "contents" }}
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="row mt-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <form action="/admin/dologin" method="post">
+                    <div class="form-group">
+                        <label for="">管理员</label>
+                        <input type="text" class="form-control" name="user" placeholder="User">
+                    </div>
+                    <div class="form-group">
+                        <label for="">密码</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit"  class="btn btn-primary" >Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+
+
+    </main>
+{{ end }}
+
+
+{{ define "left" }}
+    left
+{{ end }}

@@ -1,0 +1,10 @@
+{{ define "contents" }}
+
+    <div style="background: yellow">
+        this is index
+        {{ range .}}
+            <p>{{.}}</p>
+        {{ end }}
+    </div>
+
+{{ end }}

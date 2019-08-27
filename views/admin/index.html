@@ -1,0 +1,32 @@
+{{ define "contents" }}
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Home</h1>
+        </div>
+    <h2>Recently</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Contents</th>
+                <th>Cate</th>
+                <th>CreateAt</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{ range .}}
+            <tr>
+                <td>{{.id}}</td>
+                <td>{{.title}}</td>
+                <td>{{.contents}}</td>
+                <td>{{.cate_id}}</td>
+                <td>{{.create_time}}</td>
+            </tr>
+            {{ end }}
+            </tbody>
+        </table>
+    </div>
+    </main>
+{{ end }}

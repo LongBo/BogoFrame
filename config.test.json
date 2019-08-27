@@ -1,0 +1,10 @@
+{
+    "Host":"",
+    "DbName":"dbtest",
+    "Port":"3306",
+    "UserName":"tester",
+    "Password":"tester",
+    "Charset":"utf8",
+    "WebDomain":"",
+    "WebPort":"8080"
+}
