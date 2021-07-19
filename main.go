@@ -25,7 +25,7 @@ func main() {
 	router.GET("/admin/article", admin.Article)
 	router.GET("/admin/login", admin.Login)
 	router.POST("/admin/dologin", admin.DoLogin)
-	utils.Nlog.Println("Start Ncfwxen...")
+	utils.Nlog.Println("Start xxx...")
 	sysConf := *config.SysConfig()
 	addr := fmt.Sprintf("%s:%s", sysConf.Domain, sysConf.HttpPort)
 	router.ServeFiles("/static/*filepath", http.Dir("static"))
